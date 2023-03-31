@@ -41,6 +41,8 @@
         "hyperf/tracer": "~2.2.0",
         "hyperf/translation": "^2.2",
         "hyperf/validation": "^2.2",
+        "hyperf/view": "^2.2",
+        "hyperf/view-engine": "2.2",
         "hyperf/websocket-client": "^2.2",
         "hyperf/websocket-server": "^2.2"
     },

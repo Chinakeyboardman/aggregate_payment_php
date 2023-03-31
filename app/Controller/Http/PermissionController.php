@@ -15,6 +15,7 @@ use App\Core\Request\RoleAddRequest;
 use App\Core\Service\PermissionService;
 use App\Core\Service\Response;
 use Hyperf\Di\Annotation\Inject;
+use Hyperf\HttpServer\Annotation\AutoController;
 use Hyperf\HttpServer\Contract\RequestInterface;
 use Hyperf\HttpServer\Contract\ResponseInterface;
 use Psr\Container\ContainerExceptionInterface;
@@ -22,6 +23,7 @@ use Psr\Container\NotFoundExceptionInterface;
 
 /**
  * PermissionController
+ * @AutoController(prefix="/http/permission")
  * @package \App\Controller\Http
  * @property PermissionService $permissionService
  */

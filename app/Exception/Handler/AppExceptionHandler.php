@@ -73,7 +73,7 @@ class AppExceptionHandler extends ExceptionHandler
 
         if (env('APP_ENV', '') == 'dev') {
             $data = json_encode([
-                'code' => $code,
+                'code' => $throwable->getCode(),
                 'msg'  => $throwable->getMessage(),
             ], JSON_UNESCAPED_UNICODE);
         } else {

@@ -25,6 +25,7 @@ class RoleAddRequest extends FormRequest
         return [
             'name' => ['required', 'string', 'max:255'],
             'level' => ['required', 'integer', Rule::in([1, 2, 3, 4, 5, 6])],
+            'status' => ['integer', Rule::in([0, 1])],
             'comment' => ['string', 'max:1024'],
             'permissions' => ['string', 'required', 'max:10240']
         ];
